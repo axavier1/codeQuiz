@@ -1,0 +1,63 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: white;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.format {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.score {
+    text-align:left;
+}
+
+.time {
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+section main {
+    margin-top: 3rem;
+}
+
+h1 {
+    font-weight: 700px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    color: black;
+    justify-content: center;
+}
+
+.btn {
+    cursor: pointer;
+}
