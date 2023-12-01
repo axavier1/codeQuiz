@@ -18,7 +18,7 @@ a:hover {
 
 .btn-info {
     background-color: #3d9c56;
-    
+
 }
 
 .btn:focus, .btn:active, .btn:visited {
@@ -40,7 +40,7 @@ p {
     font-family: "Press Start 2P";
 }
 
-#questionTitle {
+#questionHeader {
     font-size: 20px;
     font-family: "Press Start 2P";
 }
