@@ -1,63 +1,51 @@
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-
 body {
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    background-color: white;
+    background-color: #f2f2f2; 
+    font-family: "Press Start 2P";
 }
 
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-header {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-.format {
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%;
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-.score {
-    text-align:left;
-}
-
-.time {
-    text-align: right;
+h1, h2 {
+    color: black;
 }
 
 a {
-    text-decoration: none;
+    color: #3d9c56;
+   
 }
 
-section main {
-    margin-top: 3rem;
+a:hover {
+    color: #99bfa6;
 }
 
-h1 {
-    font-weight: 700px;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    color: black;
-    justify-content: center;
+.btn-info {
+    background-color: #3d9c56;
+    
 }
 
-.btn {
-    cursor: pointer;
+.btn:focus, .btn:active, .btn:visited {
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: #343a40;
+}
+
+#finalScore {
+    font-family: "Press Start 2P";
+    font-weight: bold;
+}
+
+span {
+    font-family: "Press Start 2P";
+}
+
+p {
+    font-family: "Press Start 2P";
+}
+
+#questionTitle {
+    font-size: 20px;
+    font-family: "Press Start 2P";
+}
+
+#answerCheck {
+    font-style: italic;
+    color: #4D5159;
 }
