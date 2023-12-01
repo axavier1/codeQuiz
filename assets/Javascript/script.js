@@ -47,7 +47,7 @@ const questions = [
     {
         question: "6. How do you call a function named myFunction?",
         choices: ["a. call myFunction()", "b. call function myFunction()", "c. myFunction()", "d. call myFunction"],
-        answer: "c. myFunctions()"
+        answer: "c. myFunction()"
     },
     {
         question: "7. To see if two variables are equal in an if / else statement you would use ____.",
@@ -100,7 +100,6 @@ var clearHighScoreBtn = document.getElementById("clearHighScoreBtn");
 var viewHighScore = document.getElementById("viewHighScore");
 var listOfHighScores = document.getElementById("listOfHighScores");
 
-// define other variables
 var correctAns = 0;
 var questionNum = 0;
 var scoreResult;
@@ -133,10 +132,6 @@ function newQuiz() {
     showQuiz();
 };
 
-// console.log(questions[questionIndex].question);
-// console.log(questions[questionIndex].choices);
-
-
 function showQuiz() {
     nextQuestion();
 }
@@ -159,7 +154,6 @@ function checkAnswer(answer) {
     if (questions[questionIndex].answer === questions[questionIndex].choices[answer]) {
         // Add to score if right
         correctAns++;
-        // console.log(correctAns);
         answerCheck.textContent = "Correct!";
     } else {
         // Take away time if wrong
@@ -173,7 +167,7 @@ function checkAnswer(answer) {
     if (questionIndex < questions.length) {
         nextQuestion();
     } else {
-        // if no more question, run game over function
+    
         gameOver();
     }
 }
@@ -198,11 +192,8 @@ function gameOver() {
     finalScore.textContent = correctAns;
 }
 
-// enter initial and store highscore in local storage
 function storeHighScores(event) {
     event.preventDefault();
-
-    // stop function is initial is blank
     if (initialInput.value === "") {
         alert("Please enter your initials!");
         return;
@@ -231,16 +222,13 @@ function storeHighScores(event) {
 
     console.log(userScore);
     scoresArray.push(userScore);
-
-    // stringify array in order to store in local
     var scoresArrayString = JSON.stringify(scoresArray);
     window.localStorage.setItem("high scores", scoresArrayString);
-    
     // show current highscores
     showHighScores();
 }
 
-// function to show high scores
+// Function to show high scores
 var i = 0;
 function showHighScores() {
 
@@ -253,7 +241,7 @@ function showHighScores() {
 
     var savedHighScores = localStorage.getItem("high scores");
 
-    // check if there is any in local storage
+    // Check if there is any in local storage
     if (savedHighScores === null) {
         return;
     }
